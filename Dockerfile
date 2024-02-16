@@ -1,6 +1,8 @@
 # Alpine Linux with OpenJDK JRE
 FROM openjdk:8-jre-alpine
 
+LABEL author="Shantayya Swami"
+
 EXPOSE 8080
 
 # copy jar into image
