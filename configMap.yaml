@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: spring-petclinic
+data:
+  IMAGE_NAME: shantayya/spring-petclinic
+  IMAGE_TAG: latest
