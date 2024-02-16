@@ -36,7 +36,7 @@ pipeline {
             - cat
             tty: true
           - name: kubectl-helm-cli
-            image: kunchalavikram/kubectl_helm_cli:latest
+            image: shantayya/kubectl_helm_cli:latest
             command:
             - cat
             tty: true
@@ -71,7 +71,7 @@ pipeline {
       when { expression { true } }
       steps {
         container('git') {
-          git url: 'https://github.com/kunchalavikram1427/spring-petclinic.git',
+          git url: 'https://github.com/shantayyaswami/spring-petclinic.git',
           branch: 'main'
         }
       }
